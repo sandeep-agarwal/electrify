@@ -7,6 +7,9 @@
       <v-btn>
         <v-icon>invert_colors</v-icon>
       </v-btn>
+      <v-btn>
+        <v-icon>settings</v-icon>
+      </v-btn>
     </v-toolbar>
 
     <v-content>
