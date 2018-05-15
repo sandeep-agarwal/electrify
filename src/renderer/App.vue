@@ -8,14 +8,6 @@
         <v-btn>
           <v-icon>invert_colors</v-icon>
         </v-btn>
-        <v-btn>
-          <span class="hidden-xs-only">Update&nbsp;</span>
-          <v-icon>update</v-icon>
-        </v-btn>
-        <v-btn>
-          <span class="hidden-xs-only">Settings&nbsp;</span>
-          <v-icon>settings</v-icon>
-        </v-btn>
       </v-toolbar>
       <v-content>
         <v-container fluid fill-height>
