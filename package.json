@@ -1,9 +1,9 @@
 {
   "name": "electify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Paul Whittemore <dev@appurist.com>",
   "description": "Electron Vuetify Test",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -51,7 +51,11 @@
     }
   },
   "dependencies": {
+    "axios": "^0.16.1",
+    "babel-polyfill": "^6.26.0",
+    "jspdf": "^1.3.5",
     "vue": "^2.5.16",
+    "vue-clipboard2": "0.0.8",
     "vue-electron": "^1.0.6",
     "vuetify": "^1.1.0-alpha.4"
   },
