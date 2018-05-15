@@ -1,27 +1,27 @@
 <template>
   <div id="app">
     <v-app dark>
+      <v-toolbar dense fixed app color="primary">
+        <v-spacer class="hidden-sm-and-down"></v-spacer>
+        <v-toolbar-title class="hidden-sm-and-down" v-text="title"></v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn>
+          <v-icon>fa-adjust</v-icon>
+        </v-btn>
+        <v-btn>
+          <span class="hidden-xs-only">Update PLA List&nbsp;</span>
+          <v-icon>fa-list</v-icon>
+        </v-btn>
+        <v-btn>
+          <span class="hidden-xs-only">Settings&nbsp;</span>
+          <v-icon>fa-cog</v-icon>
+        </v-btn>
+      </v-toolbar>
       <v-content>
         <v-container fluid fill-height>
           <welcome-view></welcome-view>
         </v-container>
       </v-content>
-      <v-navigation-drawer
-        temporary
-        fixed
-        :right="right"
-        v-model="rightDrawer"
-        app
-      >
-        <v-list>
-          <v-list-tile @click.native="right = !right">
-            <v-list-tile-action>
-              <v-icon light>compare_arrows</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-          </v-list-tile>
-        </v-list>
-      </v-navigation-drawer>
       <v-footer :fixed="fixed" app>
         <v-spacer></v-spacer>
         <span>&copy; 2017</span>
